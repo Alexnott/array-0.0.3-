@@ -33,9 +33,9 @@ int main()
 		std::cout << "An error has occured while reading numbers from line" << std::endl;
 		return 0;
 	}
-	maxsum = numbers1[0];
-	for (int i = 0; i < 9; i++) {
-		for(int j = i+1; j < 10; j++ ){
+	maxsum = numbers1[0]+numbers2[0] ;
+	for (int i = 0; i <= 9; i++) {
+		for(int j=i ;  j < 10; j++ ){
 			sum = numbers1[i] + numbers2[j];
 			if (sum > maxsum) maxsum = sum;
 		}
